@@ -2,11 +2,16 @@
 ## Quality Assurance
 ## for Drupal Sites
 ## with Behat and Mink
+![cc](cc.png)
 
 !SLIDE small center bullets
-## Melissa Anderson
+# Melissa Anderson
 
-* TODO
+* [@lz411](http://twitter.com/lz411)
+* [eliza411](http://drupal.org/user/33570)
+* ![opensourcery](opensourcery.png)
+
+
 
 !SLIDE small center bullets
 # Jonathan Hedstrom
@@ -14,7 +19,7 @@
 * [@jhedstro](http://twitter.com/jhedstro)
 * [jhedstrom](http://drupal.org/user/208732)
 * ![opensourcery](opensourcery.png)
-* ![cc](cc.png)
+
 
 !SLIDE
 # Behat
