@@ -1,1 +1,11 @@
-{ "name": "Quality Assurance for Drupal Sites with Behat and Mink", "sections": [ {"section":"one"} ]}
+ {
+  "name": "Quality Assurance for Drupal Sites with Behat and Mink",
+  "description": "Example Presentation",
+  "templates" : {
+      "default" : "one-col.tpl",
+      "special" : "two-col.tpl"
+  },
+  "sections": [
+    {"section":"one"}
+  ]
+}

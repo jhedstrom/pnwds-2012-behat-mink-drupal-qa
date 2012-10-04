@@ -1,0 +1,12 @@
+div#first {
+  width: 50%
+  position: absolute;
+  left: 0%;
+}
+
+div#second {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  border: 1px solid orange
+}

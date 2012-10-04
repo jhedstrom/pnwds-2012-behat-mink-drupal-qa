@@ -95,9 +95,6 @@ public class Example  {
 !SLIDE
 # Behat incorporates the business value
 
-!Slide
-# Tell a story
-
 Feature: Don't let anonymous people use the PHP filter
  In order to prevent site hacking
  As a site owner
