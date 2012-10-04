@@ -95,7 +95,7 @@ public class Example  {
 !SLIDE
 # Behat incorporates the business value
 
-!Slide
+!SLIDE
 # Tell a story
 
 Feature: Don't let anonymous people use the PHP filter
@@ -106,16 +106,16 @@ Feature: Don't let anonymous people use the PHP filter
 !SLIDE
 # Elaborate with scenarios
 
-Scenario: No php filter for comments
-   Given I am on the homepage
-   When I follow "Articles"
-   And I follow "Read more"
-   Then I should not see "You may post PHP code. You should include <?php ?> tag"
+    @@@ gherkin
+    Scenario: No php filter for comments
+      Given I am on the homepage
+      When I follow "Articles"
+	  And I follow "Read more"
+      Then I should not see "You may post PHP code. You should include <?php ?> tag"
 
-Given: Put the system in a known state
-When: Act on the system
-Then: Describe the result of the action
-
+    Given: Put the system in a known state
+      When: Act on the system
+      Then: Describe the result of the action
 
 !SLIDE
 # Save to a file and execute
