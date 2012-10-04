@@ -44,7 +44,7 @@ http://www.untoldentertainment.com
 It's a PHP implementation of Ruby's Cucumber and Python's Lettuce, all of which support Behavior-Driven Development and its three core values ...
 
 !SLIDE
-One: Everyone on the team should refer website features in the same way
+One: Everyone on the team should refer to website features in the same way
 
 ![Team](team.jpg)
 
