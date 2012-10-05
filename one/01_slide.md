@@ -120,40 +120,43 @@ Feature: Don't let anonymous people use the PHP filter
 !SLIDE
 # Save to a file and execute
 
-Feature: Don't let anonymous people use the PHP filter
- In order to prevent site hacking
- As a site owner
- I need to know that my site is properly configured
+    @@@ gherkin
+    Feature: Don't let anonymous people use the PHP filter
+      In order to prevent site hacking
+      As a site owner
+      I need to know that my site is properly configured
 
- Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
-    Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
-    When I follow "Articles"                                                       # FeatureContext::clickLink()
-    And I follow "Read more"                                                       # FeatureContext::clickLink()
-    Then I should not see "You may post PHP code. You should include <?php ?> tag"    
+      Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
+      Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
+      When I follow "Articles"                                                       # FeatureContext::clickLink()
+      And I follow "Read more"                                                       # FeatureContext::clickLink()
+      Then I should not see "You may post PHP code. You should include <?php ?> tag"    
        # FeatureContext::assertPageNotContainsText()
 
-1 scenario (1 passed)
-4 steps (4 passed)
-0m0.545s
+    1 scenario (1 passed)
+    4 steps (4 passed)
+    0m0.545s
 
 !SLIDE
 # Behat can help us discover what we don't know
-Feature: Don't let anonymous people use the PHP filter
- In order to prevent site hacking
- As a site owner
- I need to know that my site isn't improperly configured
 
- Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
-    Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
-    When I follow "Articles"                                                       # FeatureContext::clickLink()
-    And I follow "Read more"                                                       # FeatureContext::clickLink()
-    Then I should not see "You may post PHP code. You should include <?php ?> tag"    
+    @@@ gherkin
+    Feature: Don't let anonymous people use the PHP filter
+      In order to prevent site hacking
+      As a site owner
+      I need to know that my site isn't improperly configured
+
+    Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
+      Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
+      When I follow "Articles"                                                       # FeatureContext::clickLink()
+      And I follow "Read more"                                                       # FeatureContext::clickLink()
+      Then I should not see "You may post PHP code. You should include <?php ?> tag"    
        # FeatureContext::assertPageNotContainsText()
-     The text "You may post PHP code. You should include <?php ?> tag" appears in the text of this page, but it should not.
+      The text "You may post PHP code. You should include <?php ?> tag" appears in the text of this page, but it should not.
 
-1 scenario (1 failed)
-4 steps (3 passed, 1 failed)
-0m0.545s
+    1 scenario (1 failed)
+    4 steps (3 passed, 1 failed)
+    0m0.545s
 
 !SLIDE
 # Mink  
