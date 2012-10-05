@@ -58,18 +58,20 @@ Three: Ignorance is the biggest constraint of software development.
 
 Hic sunt dracones
 
-!SLIDE
+!SLIDE smaller
 # Behat provides the common language
 
-package org.openqa.selenium.example;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+    @@@ java
+    package org.openqa.selenium.example;
 
-public class Example  {
-    public static void main(String[] args) {
+    import org.openqa.selenium.By;
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.WebElement;
+    import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
+    public class Example  {
+      public static void main(String[] args) {
         // Create a new instance of the html unit driver
         // Notice that the remainder of the code relies on the interface, 
         // not the implementation.
@@ -89,8 +91,8 @@ public class Example  {
 
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
+      }
     }
-}
 
 !SLIDE
 # Behat incorporates the business value
