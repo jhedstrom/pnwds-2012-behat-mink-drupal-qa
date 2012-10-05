@@ -61,7 +61,6 @@ Hic sunt dracones
 !SLIDE smaller
 # Behat provides the common language
 
-
     @@@ java
     package org.openqa.selenium.example;
 
@@ -100,7 +99,7 @@ Hic sunt dracones
 !SLIDE
 # Tell a story
 
-    @@@ gherking
+    @@@ gherkin
     Feature: Don't let anonymous people use the PHP filter
       In order to prevent site hacking
       As a site owner
