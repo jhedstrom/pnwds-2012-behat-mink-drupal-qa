@@ -98,10 +98,11 @@ public class Example  {
 !SLIDE
 # Tell a story
 
-Feature: Don't let anonymous people use the PHP filter
- In order to prevent site hacking
- As a site owner
- I need to know that my site is properly configured
+    @@@ gherking
+    Feature: Don't let anonymous people use the PHP filter
+      In order to prevent site hacking
+      As a site owner
+      I need to know that my site is properly configured
 
 !SLIDE
 # Elaborate with scenarios
