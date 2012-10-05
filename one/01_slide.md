@@ -58,10 +58,12 @@ Three: Ignorance is the biggest constraint of software development.
 
 Hic sunt dracones
 
-!SLIDE smaller
+!SLIDE
 # Behat provides the common language
 
-    @@@ java
+<div class="column column-2">
+  <pre class="sh_java sh_sourceCode">
+    <code>
     package org.openqa.selenium.example;
 
     import org.openqa.selenium.By;
@@ -92,6 +94,13 @@ Hic sunt dracones
         System.out.println("Page title is: " + driver.getTitle());
       }
     }
+    </code>
+  </pre>
+</div>
+<div class="column column-2">
+  Second column
+</div>
+
 
 !SLIDE
 # Behat incorporates the business value

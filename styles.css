@@ -1,0 +1,10 @@
+.column {
+  float: left;
+  overflow-x: scroll;
+}
+
+.column-2 {
+  width: 48%;
+}
+
+
