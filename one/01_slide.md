@@ -180,3 +180,27 @@ Hic sunt dracones
 
 !SLIDE
 # Roadmap
+
+* Provide reusable language and supporting step definitions common to most Drupal sites.
+
+(Will be ongoing)
+
+!SLIDE small bullets incremental
+# Roadmap
+
+Provide multiple ways of manipulating the backend (Drivers).
+
+* Blackbox
+  (no direct access to backend)
+* Drush
+  (uses Drush aliases to access local or remote sites)
+* Drupal
+  (uses direct Drupal API calls to access local sites)
+* Services
+
+!SLIDE center
+# Roadmap
+
+Ability to find and load sub-contexts that can be bundled with contrib modules
+
+Complex features can have step-definitions (think Media, or Views)

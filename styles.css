@@ -1,6 +1,9 @@
 .content {
   margin-top: 20px !important;
 }
+.slide .center {
+  vertical-align: top;
+}
 
 .column {
   float: left;
