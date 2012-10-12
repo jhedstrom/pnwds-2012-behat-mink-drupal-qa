@@ -109,7 +109,7 @@ Hic sunt dracones
 # Tell a story
 
     @@@ gherkin
-    Feature: Don't let anonymous people use the PHP filter
+    Feature: Do not let anonymous people use the PHP filter
       In order to prevent site hacking
       As a site owner
       I need to know that my site is properly configured
@@ -132,17 +132,17 @@ Hic sunt dracones
 # Save to a file and execute
 
     @@@ gherkin
-    Feature: Don't let anonymous people use the PHP filter
+    Feature: Do not let anonymous people use the PHP filter
       In order to prevent site hacking
       As a site owner
       I need to know that my site is properly configured
 
       Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
         Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
-         When I follow "Articles"                                                       # FeatureContext::clickLink()
-          And I follow "Read more"                                                       # FeatureContext::clickLink()
+         When I follow "Articles"                                                      # FeatureContext::clickLink()
+          And I follow "Read more"                                                     # FeatureContext::clickLink()
          Then I should not see "You may post PHP code. You should include <?php ?> tag"    
-       # FeatureContext::assertPageNotContainsText()
+      # FeatureContext::assertPageNotContainsText()
 
     1 scenario (1 passed)
     4 steps (4 passed)
@@ -152,10 +152,10 @@ Hic sunt dracones
 # Behat can help us discover what we don't know
 
     @@@ gherkin
-    Feature: Don't let anonymous people use the PHP filter
+    Feature: Do not let anonymous people use the PHP filter
       In order to prevent site hacking
       As a site owner
-      I need to know that my site isn't improperly configured
+      I need to know that my site is properly configured
 
     Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
       Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
