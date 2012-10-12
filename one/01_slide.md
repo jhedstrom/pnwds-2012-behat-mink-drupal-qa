@@ -175,11 +175,18 @@ Hic sunt dracones
 !SLIDE
 # Mink  
 
+## Web acceptance testing
+Separates the concept of testing web applications from the actual browser used.
+
 !SLIDE
 # Mink Extension
 
+Provides language and corresponding step-definitions for testing web applications.
+
 !SLIDE
 # The Drupal Extension
+
+http://drupal.org/project/drupalextension
 
 !SLIDE
 # Roadmap
