@@ -122,7 +122,8 @@ Hic sunt dracones
       Given I am on the homepage
        When I follow "Articles"
 	    And I follow "Read more"
-       Then I should not see "You may post PHP code. You should include <?php ?> tag"
+       Then I should not see "You may post PHP code.
+	        You should include <?php ?> tag"
 
     Given: Put the system in a known state
      When: Act on the system
@@ -137,12 +138,12 @@ Hic sunt dracones
       As a site owner
       I need to know that my site is properly configured
 
-      Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
-        Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
-         When I follow "Articles"                                                      # FeatureContext::clickLink()
-          And I follow "Read more"                                                     # FeatureContext::clickLink()
-         Then I should not see "You may post PHP code. You should include <?php ?> tag"    
-      # FeatureContext::assertPageNotContainsText()
+      Scenario: No php filter for comments
+        Given I am on the homepage
+         When I follow "Articles"
+          And I follow "Read more"
+         Then I should not see "You may post PHP code.
+		      You should include <?php ?> tag"
 
     1 scenario (1 passed)
     4 steps (4 passed)
@@ -157,13 +158,15 @@ Hic sunt dracones
       As a site owner
       I need to know that my site is properly configured
 
-    Scenario: No php filter for comments                                             # features/no_anon_php.feature:6
-      Given I am on the homepage                                                     # FeatureContext::iAmOnTheHomepage()
-       When I follow "Articles"                                                       # FeatureContext::clickLink()
-        And I follow "Read more"                                                       # FeatureContext::clickLink()
-       Then I should not see "You may post PHP code. You should include <?php ?> tag"    
-       # FeatureContext::assertPageNotContainsText()
-      The text "You may post PHP code. You should include <?php ?> tag" appears in the text of this page, but it should not.
+    Scenario: No php filter for comments
+      Given I am on the homepage
+       When I follow "Articles"
+        And I follow "Read more"
+       Then I should not see "You may post PHP code.
+	        You should include <?php ?> tag"
+        
+		    The text "You may post PHP code. You should include <?php ?>
+			tag" appears in the text of this page, but it should not.
 
     1 scenario (1 failed)
     4 steps (3 passed, 1 failed)
