@@ -6,7 +6,6 @@ pre.sh_sourceCode.sh_gherkin {
   padding: 20px;
   font-size: 20px;
   border-radius: 20px;
-  overflow-x: scroll;
 }
 
 pre.sh_sourceCode.sh_gherkin .sh_keyword { color: white; font-weight: bold; }           /* language keywords */
