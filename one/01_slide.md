@@ -203,6 +203,14 @@ Sample `composer.json` file
         "bin-dir": "bin/"
 	  }
 	}
+	
+	@@@ sh
+	$ composer install
+
+!SLIDE
+# Getting started with the Drupal Extension
+
+Sample `behat.yml` file
 
 !SLIDE
 # Roadmap
