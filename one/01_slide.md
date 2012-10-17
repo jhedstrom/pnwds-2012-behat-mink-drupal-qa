@@ -208,6 +208,11 @@ Provide multiple ways of manipulating the backend (Drivers).
   (uses direct Drupal API calls to access local sites)
 * Services
 
+!SLIDE
+# Roadmap
+
+Support multiple major versions of Drupal
+
 !SLIDE center
 # Roadmap
 
