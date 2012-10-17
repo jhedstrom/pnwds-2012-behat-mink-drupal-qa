@@ -189,6 +189,22 @@ Provides language and corresponding step-definitions for testing web application
 http://drupal.org/project/drupalextension
 
 !SLIDE
+# Getting started with the Drupal Extension
+
+Sample `composer.json` file
+
+    @@@ javascript
+    {
+      "require": {
+        "drupal/drupal-extension": "*"
+      },
+      "minimum-stability": "dev",
+      "config": {
+        "bin-dir": "bin/"
+	  }
+	}
+
+!SLIDE
 # Roadmap
 
 * Provide reusable language and supporting step definitions common to most Drupal sites.
