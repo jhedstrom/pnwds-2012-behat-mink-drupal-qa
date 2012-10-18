@@ -190,7 +190,7 @@ Provides language and corresponding step-definitions for testing web application
 
 http://drupal.org/project/drupalextension
 
-!SLIDE
+!SLIDE small
 # Getting started with the Drupal Extension
 
 Sample `composer.json` file
@@ -205,14 +205,31 @@ Sample `composer.json` file
         "bin-dir": "bin/"
 	  }
 	}
-	
-	@@@ sh
+
+!SLIDE small
+# Getting started with the Drupal Extension
+
+    @@@ bash
 	$ composer install
 
-!SLIDE
+![composer-install](composer-install.png)
+
+!SLIDE small
 # Getting started with the Drupal Extension
 
 Sample `behat.yml` file
+
+    @@@ yml
+    default:
+      paths:
+        features: 'features'
+      extensions:
+        Behat\MinkExtension\Extension:
+          goutte: ~
+          selenium2: ~
+            base_url: http://git6site.devdrupal.org/
+        Drupal\DrupalExtension\Extension:
+          blackbox: ~
 
 !SLIDE
 # Roadmap
