@@ -21,7 +21,9 @@
 
 * [@jhedstro](http://twitter.com/jhedstro)
 * [jhedstrom](http://drupal.org/user/208732)
-* ![opensourcery](opensourcery.png)
+
+![opensourcery](opensourcery.png)
+![Jonathan Hedstrom](jhedstrom.jpg)
 
 !SLIDE
 # QA is the voice of the user
