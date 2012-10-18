@@ -3,6 +3,7 @@
 ## for Drupal Sites
 ## with Behat and Mink
 ![behat](behat.png)
+![drupal](beehat-druplicon.png)
 
 ![cc](cc.png)
 
@@ -269,4 +270,8 @@ Complex features can have common step-definitions (think Media, or Views)
 !SLIDE
 #Thank you!
 
-Questions?
+##Questions?
+
+Druplicon *beehat* by jessehs
+
+![drupal](beehat-druplicon.png)
