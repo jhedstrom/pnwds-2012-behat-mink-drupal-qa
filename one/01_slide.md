@@ -2,6 +2,8 @@
 ## Quality Assurance
 ## for Drupal Sites
 ## with Behat and Mink
+![behat](behat.png)
+
 ![cc](cc.png)
 
 !SLIDE small bullets
