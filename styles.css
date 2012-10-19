@@ -14,4 +14,6 @@
   width: 48%;
 }
 
-
+.slide {
+  background-image: -webkit-radial-gradient(left top, #eef2f2 5px, #f2f2ff 500px);
+}
