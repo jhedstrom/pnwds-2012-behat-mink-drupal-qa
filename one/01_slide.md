@@ -188,10 +188,12 @@ Separates the concept of testing web applications from the actual browser used.
 
 Provides language and corresponding step-definitions for testing web applications.
 
-!SLIDE
+!SLIDE bullets incremental
 # The Drupal Extension
 
-http://drupal.org/project/drupalextension
+* Provides language and step-definitions specific to testing Drupal web applications.
+* Builds on top of the Mink Extension
+* http://drupal.org/project/drupalextension
 
 !SLIDE small
 # Getting started with the Drupal Extension
@@ -233,6 +235,16 @@ Sample `behat.yml` file
             base_url: http://git6site.devdrupal.org/
         Drupal\DrupalExtension\Extension:
           blackbox: ~
+
+!SLIDE center small
+# Getting started with the Drupal Extension
+
+List of available step definitions
+
+    @@@ sh
+	bin/behat -dl
+
+.notes Live demo
 
 !SLIDE center
 # Roadmap
