@@ -214,6 +214,9 @@ Sample `composer.json` file
 !SLIDE small
 # Getting started with the Drupal Extension
 
+You'll need to install *Composer* (http://getcomposer.org). I install
+it globally so I can just call `composer`.
+
     @@@ bash
 	$ composer install
 
