@@ -268,7 +268,7 @@ Support multiple major versions of Drupal
 * Ability to find and load sub-contexts that can be bundled with contrib modules
 * Complex features can have common step-definitions (think Media, or Views)
 
-!SLIDE
+!SLIDE small
 #Thank you!
 
 ##Questions?
@@ -276,3 +276,5 @@ Support multiple major versions of Drupal
 Druplicon *beehat* by jessehs
 
 ![drupal](beehat-druplicon.png)
+
+Slides available at http://jhedstrom.github.com
