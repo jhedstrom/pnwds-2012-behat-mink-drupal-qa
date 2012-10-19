@@ -234,14 +234,17 @@ Sample `behat.yml` file
         Drupal\DrupalExtension\Extension:
           blackbox: ~
 
-!SLIDE
+!SLIDE center
+# Roadmap
+
+!SLIDE center
 # Roadmap
 
 * Provide reusable language and supporting step definitions common to most Drupal sites.
 
 (Will be ongoing)
 
-!SLIDE small bullets incremental
+!SLIDE center small bullets incremental
 # Roadmap
 
 Provide multiple ways of manipulating the backend (Drivers).
@@ -254,20 +257,16 @@ Provide multiple ways of manipulating the backend (Drivers).
   (uses direct Drupal API calls to access local sites)
 * Services
 
-!SLIDE
+!SLIDE center
 # Roadmap
 
 Support multiple major versions of Drupal
 
-!SLIDE center
+!SLIDE center bullets incremental
 # Roadmap
 
-Ability to find and load sub-contexts that can be bundled with contrib modules
-
-Complex features can have common step-definitions (think Media, or Views)
-
-!SLIDE center
-# Roadmap
+* Ability to find and load sub-contexts that can be bundled with contrib modules
+* Complex features can have common step-definitions (think Media, or Views)
 
 !SLIDE
 #Thank you!
