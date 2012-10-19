@@ -293,7 +293,7 @@ List of available step definitions
 !SLIDE center
 # Roadmap
 
-* Provide reusable language and supporting step definitions common to most Drupal sites.
+Provide reusable language and supporting step definitions common to most Drupal sites.
 
 (Will be ongoing)
 
