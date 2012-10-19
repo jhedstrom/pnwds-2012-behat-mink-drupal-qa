@@ -63,7 +63,7 @@ Three: Ignorance is the biggest constraint of software development.
 
 Hic sunt dracones
 
-!SLIDE
+!SLIDE small
 # Behat provides the common language
 
 <div class="column column-2">
@@ -103,7 +103,14 @@ Hic sunt dracones
   </pre>
 </div>
 <div class="column column-2">
-  Second column
+  <pre class="sh_gherkin sh_sourceCode">
+    <code>
+	Given I am at "http://www.google.com"
+	When I enter "Cheese!" for "Search"
+	And click "Google Search"
+	Then I should see the text "results"
+	</code>
+  </pre>
 </div>
 
 
