@@ -190,6 +190,8 @@ Hic sunt dracones
 ## Web acceptance testing
 Separates the concept of testing web applications from the actual browser used.
 
+[http://mink.behat.org](http://mink.behat.org)
+
 !SLIDE small bullets incremental
 # Supported browser drivers
 
@@ -203,6 +205,17 @@ Separates the concept of testing web applications from the actual browser used.
 # Mink Extension
 
 Provides language and corresponding step-definitions for testing web applications.
+
+!SLIDE
+# Mink Extension
+
+Provides language and corresponding step-definitions for testing web applications.
+
+    @@@ gherkin
+    Given I visit "http://google.com"
+    When I fill in "Drupal" for "Search"
+	And press "Search"
+	Then I should see the link "http://drupal.org"
 
 !SLIDE bullets incremental
 # The Drupal Extension
