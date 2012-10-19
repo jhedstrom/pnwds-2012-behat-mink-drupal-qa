@@ -190,6 +190,15 @@ Hic sunt dracones
 ## Web acceptance testing
 Separates the concept of testing web applications from the actual browser used.
 
+!SLIDE small bullets incremental
+# Supported browser drivers
+
+* Goutte
+* Selenium
+* WebDriver (Selenium 2)
+* Sahi
+* Zombie
+
 !SLIDE
 # Mink Extension
 
