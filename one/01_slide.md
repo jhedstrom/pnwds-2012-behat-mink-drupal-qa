@@ -224,6 +224,15 @@ Provides language and corresponding step-definitions for testing web application
 * Builds on top of the Mink Extension
 * http://drupal.org/project/drupalextension
 
+!SLIDE
+# The Drupal Extension
+
+    @@@ gherkin
+	Given I am logged in as a user with the "administrator" role
+	When I am at "node/add"
+	Then I should see the link "Article"
+	And I should see the link "Basic page"
+
 !SLIDE small
 # Getting started with the Drupal Extension
 
