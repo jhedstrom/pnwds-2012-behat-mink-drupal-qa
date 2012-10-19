@@ -13,7 +13,6 @@
 * [@lz411](http://twitter.com/lz411)
 * [eliza411](http://drupal.org/user/33570)
 
-![opensourcery](opensourcery.png)
 ![Melissa Anderson](melissa.jpg) 
 
 !SLIDE small center bullets
