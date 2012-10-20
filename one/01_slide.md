@@ -31,7 +31,7 @@
 ## QA is the voice of the user
 ![Voice of the user](voice.jpg)
 
-!SLIDE 
+!SLIDE incremental
 # Quality Assurance
 ## QA touches every part of the development cycle
 
@@ -220,7 +220,7 @@ Separates the concept of testing web applications from the actual browser used.
 
 [http://mink.behat.org](http://mink.behat.org)
 
-!SLIDE small bullets incremental
+!SLIDE small incremental
 # Supported browser drivers
 
 * Goutte
@@ -245,7 +245,7 @@ Provides language and corresponding step-definitions for testing web application
 	And press "Search"
 	Then I should see the link "http://drupal.org"
 
-!SLIDE bullets incremental
+!SLIDE incremental
 # The Drupal Extension
 
 * Provides language and step-definitions specific to testing Drupal web applications.
@@ -331,7 +331,7 @@ Provide reusable language and supporting step definitions common to most Drupal 
 
 (Will be ongoing)
 
-!SLIDE center bullets incremental
+!SLIDE small center incremental
 # Roadmap
 
 Provide multiple ways of manipulating the backend (Drivers).
@@ -349,7 +349,7 @@ Provide multiple ways of manipulating the backend (Drivers).
 
 Support multiple major versions of Drupal
 
-!SLIDE center bullets incremental
+!SLIDE small incremental
 # Roadmap
 
 * Ability to find and load sub-contexts that can be bundled with contrib modules
