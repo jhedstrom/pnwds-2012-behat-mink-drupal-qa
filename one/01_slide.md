@@ -313,6 +313,8 @@ List of available step definitions
     @@@ sh
 	bin/behat -dl
 
+![behat -dl command](behat-dl.png)
+
 .notes Live demo
 
 !SLIDE center
