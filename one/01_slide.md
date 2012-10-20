@@ -35,6 +35,12 @@
 # Quality Assurance
 ## QA touches every part of the development cycle
 
+* Sales
+* Discovery
+* Development
+* Deployment
+* Support
+
 !SLIDE
 #Methodology
 ## Waterfall
