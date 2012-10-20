@@ -60,28 +60,11 @@ h1 {
  top: 0;
 }
 
-
-.sh_gherkin code {
-
-  font-size: .5em;
-}
-
 div#first {
   width: 50%
   position: absolute;
   left: 0%;
 }
-
-div.column {
-  width: 50%;
-  position: absolute;
-}
-
-div.column code {
-  font-size: 1.2em;
-  line-height: 1.1;
-}
-
 
 h3 {
   text-align: left;
@@ -97,8 +80,4 @@ h3 {
 
 object {
   margin-left: 400px;
-}
-
-pre.sh_gherkin{
-  line-height: .7; 
 }
