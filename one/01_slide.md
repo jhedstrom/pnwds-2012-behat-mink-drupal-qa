@@ -355,13 +355,14 @@ Support multiple major versions of Drupal
 * Ability to find and load sub-contexts that can be bundled with contrib modules
 * Complex features can have common step-definitions (think Media, or Views)
 
-!SLIDE 
+!SLIDE small
 #Thank you!
 
 ##Questions?
 
-Druplicon *beehat* by jessehs
+<img style="width: 200px" src="image/one/beehat-druplicon.png" />
+<span class="credit">Druplicon *beehat* by jessehs</span>
 
-![drupal](beehat-druplicon.png)
+<span class="credit">Slides available at [http://jhedstrom.github.com](http://jhedstrom.github.com)</span>
 
-Slides available at http://jhedstrom.github.com
+<span class="credit">Slides powered by [http://github.com/schacon/showoff](http://github.com/schacon/showoff)</span>
