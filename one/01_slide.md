@@ -48,7 +48,7 @@
 <span class="credit">Devon Fyson / CC-BY-SA-3.0</span>
 
 !SLIDE
-i#Methodology
+#Methodology
 ## On-Demand
 ![Angry client](angryclient.jpg)
 <span class="credit">http://www.untoldentertainment.com</span>
@@ -212,10 +212,32 @@ i#Methodology
 ## Web acceptance testing
 Separates the concept of testing web applications from the actual browser used.
 
+[http://mink.behat.org](http://mink.behat.org)
+
+!SLIDE small bullets incremental
+# Supported browser drivers
+
+* Goutte
+* Selenium
+* WebDriver (Selenium 2)
+* Sahi
+* Zombie
+
 !SLIDE
 # Mink Extension
 
 Provides language and corresponding step-definitions for testing web applications.
+
+!SLIDE
+# Mink Extension
+
+Provides language and corresponding step-definitions for testing web applications.
+
+    @@@ gherkin
+    Given I visit "http://google.com"
+    When I fill in "Drupal" for "Search"
+	And press "Search"
+	Then I should see the link "http://drupal.org"
 
 !SLIDE bullets incremental
 # The Drupal Extension
@@ -225,6 +247,15 @@ Provides language and corresponding step-definitions for testing web application
 * http://drupal.org/project/drupalextension
 
 !SLIDE 
+# The Drupal Extension
+
+    @@@ gherkin
+	Given I am logged in as a user with the "administrator" role
+	When I am at "node/add"
+	Then I should see the link "Article"
+	And I should see the link "Basic page"
+
+!SLIDE small
 # Getting started with the Drupal Extension
 
 Sample `composer.json` file
@@ -284,7 +315,7 @@ List of available step definitions
 !SLIDE center
 # Roadmap
 
-* Provide reusable language and supporting step definitions common to most Drupal sites.
+Provide reusable language and supporting step definitions common to most Drupal sites.
 
 (Will be ongoing)
 
