@@ -1,71 +1,92 @@
-!SLIDE 
-## Quality Assurance
-## for Drupal Sites
-## with Behat and Mink
-![behat](behat.png)
+!SLIDE front 
+# Quality Assurance for Drupal Sites with Behat and Mink
+
 ![drupal](beehat-druplicon.png)
+![behat](behat.png)
 
 ![cc](cc.png)
 
-!SLIDE small bullets
+!SLIDE speaker
 # Melissa Anderson
 
-* [@lz411](http://twitter.com/lz411)
-* [eliza411](http://drupal.org/user/33570)
+[@lz411](http://twitter.com/lz411)
+
+[eliza411](http://drupal.org/user/33570)
 
 ![Melissa Anderson](melissa.jpg) 
 
-!SLIDE small center bullets
+!SLIDE speaker
 # Jonathan Hedstrom
 
-* [@jhedstro](http://twitter.com/jhedstro)
-* [jhedstrom](http://drupal.org/user/208732)
+[@jhedstro](http://twitter.com/jhedstro)
 
-![opensourcery](opensourcery.png)
+[jhedstrom](http://drupal.org/user/208732)
+
 ![Jonathan Hedstrom](jhedstrom.jpg)
 
-!SLIDE
-# QA is the voice of the user
-
-!SLIDE small 
-# QA touches every part of the development cycle
+![opensourcery](opensourcery.png)
 
 !SLIDE
-# Waterfall
+# Quality Assurance
+## QA is the voice of the user
+![Voice of the user](voice.jpg)
+
+!SLIDE 
+# Quality Assurance
+## QA touches every part of the development cycle
+
+!SLIDE
+#Methodology
+## Waterfall
 ![Waterfall](waterfall.png)
-Paul Hoadley / CC-BY-SA-2.5
+<span class="credit">Paul Hoadley / CC-BY-SA-2.5</span>
 
 !SLIDE
+#Methodology
+## Agile
 ![Agile](agile.png)
-Devon Fyson / CC-BY-SA-3.0
+<span class="credit">Devon Fyson / CC-BY-SA-3.0</span>
 
 !SLIDE
+i#Methodology
+## On-Demand
 ![Angry client](angryclient.jpg)
-http://www.untoldentertainment.com
+<span class="credit">http://www.untoldentertainment.com</span>
 
 !SLIDE
-# Behat is a tool for the entire cycle
-It's a PHP implementation of Ruby's Cucumber and Python's Lettuce, all of which support Behavior-Driven Development and its three core values ...
+# Flavors of BDD tools
+* Ruby has Cucumber
+* Python has Lettuce
+* PHP has Behat
 
-!SLIDE
-One: Everyone on the team should refer to website features in the same way
+##All of these support three main principals of 
+##Behavior Driven Development
+
+!SLIDE 
+# BDD Principal 1:
+## Everyone on the team should refer to website features in the same way
 
 ![Team](team.jpg)
 
 !SLIDE
-Two: Any feature on the site should have an identified verifiable value to the business or organization <object type="application/x-shockwave-flash" data="http://www.twpics.com/BUTTON5/twitbutton.swf" width="100" height="100"><param name="movie" value="http://www.twpics.com/BUTTON5/twitbutton.swf"></param><param name="allowscriptaccess" value="always"></param><param name="menu" value="false"></param><param name="wmode" value="transparent"></param><param name="flashvars" value="username=bobby_bluesqare"></param><a href="http://www.bluesqaretips.com" title="www.bluesqaretips.com">www.bluesqaretips.com</a><embed src="http://www.twpics.com/BUTTON5/twitbutton.swf" type="application/x-shockwave-flash" allowscriptaccess="always" width="100" height="100" menu="false" wmode="transparent" flashvars="username=bobby_bluesqare"></embed></object>
+# BDD Principal 2:
+## Any feature on the site should have an identified verifiable value to the business or organization 
 
-!SLIDE
-Three: Ignorance is the biggest constraint of software development.
+<object type="application/x-shockwave-flash" data="http://www.twpics.com/BUTTON5/twitbutton.swf" width="300" height="300"><param name="movie" value="http://www.twpics.com/BUTTON5/twitbutton.swf"></param><param name="allowscriptaccess" value="always"></param><param name="menu" value="false"></param><param name="wmode" value="transparent"></param><param name="flashvars" value="username=bobby_bluesqare"></param><a href="http://www.bluesqaretips.com" title="www.bluesqaretips.com">www.bluesqaretips.com</a><embed src="http://www.twpics.com/BUTTON5/twitbutton.swf" type="application/x-shockwave-flash" allowscriptaccess="always" width="100" height="100" menu="false" wmode="transparent" flashvars="username=bobby_bluesqare"></embed></object>
+
+!SLIDE bdd-3 bdd
+#BDD Principal 3:
+##Ignorance is the biggest constraint of software development
 
 ![Hic sunt dracones](dragons.jpg)
 
-Hic sunt dracones
+<span class="dragons">Hic sunt dracones</span>
 
-!SLIDE small
-# Behat provides the common language
+!SLIDE 
+# Behat provides a common language
 
-<div class="column column-2">
+<div class="column column-1">
+<h3>Selenium test</h3>
   <pre class="sh_java sh_sourceCode">
     <code>
     package org.openqa.selenium.example;
@@ -102,6 +123,7 @@ Hic sunt dracones
   </pre>
 </div>
 <div class="column column-2">
+  <h3> Behat test</h3>
   <pre class="sh_gherkin sh_sourceCode">
     <code>
 	Given I am at "http://www.google.com"
@@ -116,8 +138,8 @@ Hic sunt dracones
 !SLIDE
 # Behat incorporates the business value
 
-!SLIDE smaller
-# Tell a story
+!SLIDE 
+# First, tell a story
 
     @@@ gherkin
     Feature: Do not let anonymous people use the PHP filter
@@ -125,23 +147,23 @@ Hic sunt dracones
       As a site owner
       I need to know that my site is properly configured
 
-!SLIDE smaller
-# Elaborate with scenarios
+!SLIDE 
+# Next, elaborate with scenarios
 
     @@@ gherkin
     Scenario: No php filter for comments
       Given I am on the homepage
-       When I follow "Articles"
-	    And I follow "Read more"
-       Then I should not see "You may post PHP code.
+      When I follow "Articles"
+      And I follow "Read more"
+      Then I should not see "You may post PHP code.
 	        You should include <?php ?> tag"
 
-    Given: Put the system in a known state
-     When: Act on the system
-     Then: Describe the result of the action
+      Given: Put the system in a known state
+      When: Act on the system
+      Then: Describe the result of the action
 
-!SLIDE smaller
-# Save to a file and execute
+!SLIDE 
+# Finally, save to a file and execute
 
     @@@ gherkin
     Feature: Do not let anonymous people use the PHP filter
@@ -150,18 +172,19 @@ Hic sunt dracones
       I need to know that my site is properly configured
 
       Scenario: No php filter for comments
-        Given I am on the homepage
-         When I follow "Articles"
-          And I follow "Read more"
-         Then I should not see "You may post PHP code.
+      Given I am on the homepage
+      When I follow "Articles"
+      And I follow "Read more"
+      Then I should not see "You may post PHP code.
 		      You should include <?php ?> tag"
 
     1 scenario (1 passed)
     4 steps (4 passed)
     0m0.545s
 
-!SLIDE smaller
-# Behat can help us discover what we don't know
+!SLIDE 
+#  Behat
+##  Discover what we don't know
 
     @@@ gherkin
     Feature: Do not let anonymous people use the PHP filter
@@ -171,10 +194,10 @@ Hic sunt dracones
 
     Scenario: No php filter for comments
       Given I am on the homepage
-       When I follow "Articles"
-        And I follow "Read more"
-       Then I should not see "You may post PHP code.
-	        You should include <?php ?> tag"
+      When I follow "Articles"
+      And I follow "Read more"
+      Then I should not see "You may post PHP code.
+	       You should include <?php ?> tag"
         
 		    The text "You may post PHP code. You should include <?php ?>
 			tag" appears in the text of this page, but it should not.
@@ -201,7 +224,7 @@ Provides language and corresponding step-definitions for testing web application
 * Builds on top of the Mink Extension
 * http://drupal.org/project/drupalextension
 
-!SLIDE small
+!SLIDE 
 # Getting started with the Drupal Extension
 
 Sample `composer.json` file
@@ -217,7 +240,7 @@ Sample `composer.json` file
 	  }
 	}
 
-!SLIDE small
+!SLIDE 
 # Getting started with the Drupal Extension
 
 You'll need to install *Composer* (http://getcomposer.org). I install
@@ -228,7 +251,7 @@ it globally so I can just call `composer`.
 
 ![composer-install](composer-install.png)
 
-!SLIDE small
+!SLIDE 
 # Getting started with the Drupal Extension
 
 Sample `behat.yml` file
@@ -245,7 +268,7 @@ Sample `behat.yml` file
         Drupal\DrupalExtension\Extension:
           blackbox: ~
 
-!SLIDE center small
+!SLIDE center 
 # Getting started with the Drupal Extension
 
 List of available step definitions
@@ -265,7 +288,7 @@ List of available step definitions
 
 (Will be ongoing)
 
-!SLIDE center small bullets incremental
+!SLIDE center bullets incremental
 # Roadmap
 
 Provide multiple ways of manipulating the backend (Drivers).
@@ -289,7 +312,7 @@ Support multiple major versions of Drupal
 * Ability to find and load sub-contexts that can be bundled with contrib modules
 * Complex features can have common step-definitions (think Media, or Views)
 
-!SLIDE small
+!SLIDE 
 #Thank you!
 
 ##Questions?
