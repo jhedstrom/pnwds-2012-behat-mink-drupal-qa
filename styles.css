@@ -6,12 +6,14 @@
 }
 
 .column {
-  float: left;
-  overflow-x: scroll;
+  position: absolute;
 }
 
+.column-1 {
+  left: 0;
+}
 .column-2 {
-  width: 48%;
+  right: 0;
 }
 
 .slide {
